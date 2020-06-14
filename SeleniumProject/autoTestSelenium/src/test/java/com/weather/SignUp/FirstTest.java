@@ -9,7 +9,7 @@ public class FirstTest extends WebDriverSettings {
 
 
     @Test
-    public void positiveTest() {
+    public void positiveCase() {
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.open();
@@ -27,7 +27,7 @@ public class FirstTest extends WebDriverSettings {
     }
 
     @Test
-    public void negativeTest() {
+    public void negativeCase() {
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.open();
