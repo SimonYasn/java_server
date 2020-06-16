@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import listeners.RetryAnalizer;
 import org.junit.Assert;
 
 import org.openqa.selenium.support.PageFactory;
@@ -12,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class Tests extends WebDriverSettings {
 
-    @Test
+    @Test(priority=1)
     public void positiveCase() {
 
         ExtentTest test = extent.createTest("LamodaSignUpPositive");
@@ -81,6 +82,11 @@ public class Tests extends WebDriverSettings {
         test.pass("Errors checked");
 
 
+    }
+
+    @Test(retryAnalyzer = listeners.RetryAnalizer.class)
+    public void failTest() {
+        int i = 1/0;
     }
 
 
