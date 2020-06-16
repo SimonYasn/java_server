@@ -19,7 +19,7 @@ public class HomePage {
         driver.get("https://www.lamoda.ru/men-home/");
     }
 
-    public void getStarted() {
+    public void openLoginForm() {
         driver.findElement(By.cssSelector("[class=\"link user-nav__link js-auth-button\"]")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class=\"link_blue login-form__register link\"]")));
     }

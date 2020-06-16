@@ -1,5 +1,9 @@
 package ru.lamoda;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.junit.Assert;
 
 import org.openqa.selenium.support.PageFactory;
@@ -8,18 +12,25 @@ import org.testng.annotations.Test;
 
 public class Tests extends WebDriverSettings {
 
-
-
-
     @Test
-    public void positiveCase() throws InterruptedException {
+    public void positiveCase() {
+
+        ExtentTest test = extent.createTest("LamodaSignUpPositive");
+
 
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+
+        test.log(Status.INFO,"Open site");
         homePage.open();
-        homePage.getStarted();
+        test.pass("Navigated to Lamoda");
+
+
+        homePage.openLoginForm();
+        test.pass("Navigated to login form");
 
         SignUpPage signUpPage = PageFactory.initElements(driver, SignUpPage.class);
         signUpPage.openSignUpForm();
+        test.pass("Navigated to sign up form");
 
         signUpPage.setEmail("adasasdaqdadad@mail.ru");
         signUpPage.setPassword("fortest123");
@@ -27,6 +38,7 @@ public class Tests extends WebDriverSettings {
         signUpPage.setName("Simon");
 
         signUpPage.submitForm();
+        test.pass("Form submitted");
 
 
 
@@ -35,17 +47,24 @@ public class Tests extends WebDriverSettings {
     @Test
     public void negativeCase() {
 
+        ExtentTest test = extent.createTest("LamodaSignUpNegative");
+
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+
+        test.log(Status.INFO,"Open site");
         homePage.open();
-        homePage.getStarted();
+        test.pass("Navigated to Lamoda");
+
+        homePage.openLoginForm();
+        test.pass("Navigated to login form");
 
         SignUpPage signUpPage = PageFactory.initElements(driver, SignUpPage.class);
         signUpPage.openSignUpForm();
+        test.pass("Navigated to sign up form");
 
 
         signUpPage.submitForm();
-
-        System.out.println();
+        test.pass("Form submitted");
 
         String email = signUpPage.getEmailError();
         Assert.assertEquals(email,"Это поле необходимо заполнить.");
@@ -58,6 +77,8 @@ public class Tests extends WebDriverSettings {
 
         String name = signUpPage.getNameError();
         Assert.assertEquals(name,"Это поле необходимо заполнить.");
+
+        test.pass("Errors checked");
 
 
     }
