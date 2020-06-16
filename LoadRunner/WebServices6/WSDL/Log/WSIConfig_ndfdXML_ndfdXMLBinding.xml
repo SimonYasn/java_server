@@ -1,0 +1,13 @@
+<configuration xmlns="http://www.ws-i.org/testing/2004/07/analyzerConfig/" xmlns:wsi-common="http://www.ws-i.org/testing/2003/03/common/" xmlns:uddi="urn://uddi-org/api_v2/">
+  <verbose>true</verbose>
+  <assertionResults type="all" messageEntry="false" assertionDescription="true" failureMessage="true" failureDetail="true" />
+  <reportFile replace="true" location="C:\Users\Simon\Documents\VuGen\Scripts\WebServices6\WSDL\WSIValidationReport_ndfdXML_ndfdXMLBinding.xml">
+    <addStyleSheet href="C:\Program Files (x86)\Micro Focus\LoadRunner\wsi-test-tools\common\xsl\report.xsl" type="text/xsl" alternate="false" />
+  </reportFile>
+  <testAssertionsFile>C:\Program Files (x86)\Micro Focus\LoadRunner\wsi-test-tools\common\profiles\SSBP10_BP11_TAD.xml</testAssertionsFile>
+  <wsdlReference>
+    <wsdlElement type="binding" namespace="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">ndfdXMLBinding</wsdlElement>
+    <wsdlURI>C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl</wsdlURI>
+    <serviceLocation>http://DummyServiceLocation:80</serviceLocation>
+  </wsdlReference>
+</configuration>

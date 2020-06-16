@@ -1,0 +1,16 @@
+[parameter:NDFDgen_105_Response]
+CurrentValue=""
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="NDFDgen_105_Response"
+Prompt=""
+Type="Output"
+[parameter:Param_NDFDgenResult]
+CurrentValue=""
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="Param_NDFDgenResult"
+Prompt=""
+Type="Output"

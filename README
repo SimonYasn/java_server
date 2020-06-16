@@ -1,3 +1,6 @@
-Java http emulator (post+get request)
+Java HTTP emulator (post+get request) MAVEN+JETTY+SERVLET
 Java parser
-Selenium 
+Selenium +Java 
+Jmeter
+LoadRunner 
+DockerFile 

@@ -1,0 +1,40 @@
+Virtual User Script started at: 10.06.2020 13:39:32	[MsgId: MMSG-15967]
+Starting action vuser_init.	[MsgId: MMSG-15919]
+Web Services replay version 2020.0.0 for Windows 10; Toolkit: "WCF"; build 0	[MsgId: MMSG-108717]
+Runtime Settings file: "C:\Users\Simon\AppData\Local\Temp\lr5tmpdiroIv.360\lrcfgQDN.361\cfg0Tj.362"	[MsgId: MMSG-108716]
+Vuser directory: "C:\Users\Simon\Desktop\IPR\WebServices6"	[MsgId: MMSG-108715]
+Vuser output directory: "C:\Users\Simon\Desktop\IPR\WebServices6"	[MsgId: MMSG-108714]
+LOCAL start date/time : 2020-06-10 13:39:32	[MsgId: MMSG-108713]
+vuser_init.c(27): Web service call "LatLonListCityNames_108" started	[MsgId: MMSG-108962]
+vuser_init.c(27): Error Exceptions:	[MsgId: MMSG0]
+vuser_init.c(27): System.Reflection.TargetInvocationException: Адресат вызова создал исключение. ---> System.ApplicationException: Abort was called
+
+Server stack trace: 
+   в LR.LrWsWCFClient.LrRequestChannel.Request(Message message, TimeSpan timeout)
+   в System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   в System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   в System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   в System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   в System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   в System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   в ndfdXMLPortType.LatLonListCityNames(String displayLevel)
+   в ndfdXMLPortTypeClient.LatLonListCityNames(String displayLevel)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   в LR.LrWsWCFClient.StubAgent.InvokeMethod(String sMethod, IWSMethodParameters mParams, String sAsyncEvent)
+   в LR.LrWsWCFClient.WCFReplay.InvokeMethod(String sMethod, IWSMethodParameters mParams, String sAsyncEvent, Int32 retryTimes)	[MsgId: MMSG0]
+vuser_init.c(27): Error: InvokeMethod failure: Abort was called.	[MsgId: MERR-108906]
+vuser_init.c(27): Error stack trace:    в LR.LrWsWCFClient.ResultArgExtractor.CreateXmlArgsDoc()
+   в LR.LrWsWCFClient.ResultArgExtractor.ExtractArgAsXml(String sArgPath, ArgumentExtractionType extractionType)
+   в LR.LrWsWCFClient.ResultArgExtractor.ExtractArg(String sArgPath, Boolean IsSaveResultArgumentsAsIs, ArgumentExtractionType extractionType)
+   в LR.LrWsWCFClient.StubAgent.ExtractArg(String sArgPath, ArgumentExtractionType extractionType)
+   в LR.LrWsWCFClient.WCFReplay.ExtractResultArg(String sArgPath, ArgumentExtractionType extractionType, Array& barrArgValue)	[MsgId: MMSG0]
+vuser_init.c(27): Error: ExtractResultArg failure: Ссылка на объект не указывает на экземпляр объекта..	[MsgId: MERR-108903]
+vuser_init.c(27): Error: Web service call "LatLonListCityNames_108" execution failed	[MsgId: MERR-108960]
+Abort was called from an action.	[MsgId: MMSG-10447]
+vuser_init.c(27): Aborting pending download of URL="https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php" (RelFrameId=1, Internal ID=1)  	[MsgId: MMSG-27649]
+Vuser 0 (thread 49488), ended OK."	[MsgId: MMSG-10695]

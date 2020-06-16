@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Simon\Desktop\IPR\WebServices6
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\simon\desktop\ipr\webservices6\\logfile.log
+c:\users\simon\desktop\ipr\webservices6\\combined_WebServices6.c
+c:\users\simon\desktop\ipr\webservices6\\pre_cci.c

@@ -1,0 +1,15 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [],
+        "transactions": [
+            {
+                "transactionName": "getWeather",
+                "rawStartTime": 1591776746353,
+                "rawEndTime": 1591776747767,
+                "thinkTime": 0.0,
+                "wastedTime": 0.09757679817199708
+            }
+        ]
+    }
+]

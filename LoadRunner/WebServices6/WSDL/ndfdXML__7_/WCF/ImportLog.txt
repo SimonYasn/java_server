@@ -1,0 +1,4 @@
+Attempting to download 'C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl' using DiscoveryClientProtocol..
+DiscoveryClientProtocol found documents at the following URLs:
+- WSDL document at  
+file:///C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl

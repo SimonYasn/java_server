@@ -1,0 +1,13 @@
+[t2]
+SnapshotXmlFile=snapshot_1.xml
+ContentType=application/xml
+StepName=
+Total=1
+FileName1=t2.xml
+RequestHeaderFile=t2_RequestHeader.txt
+ResponseHeaderFile=t2_ResponseHeader.txt
+RawStepEndTime=0
+RawStepName=
+RequestBodyFile=t2_RequestBody.txt
+RawStepStartTime=0
+URL1=https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php

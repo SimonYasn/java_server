@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="C:\Program Files (x86)\Micro Focus\LoadRunner\wsi-test-tools\common\xsl\report.xsl" type="text/xsl" alternate="false" ?>
+<report name="WS-I Basic Profile Conformance Report."    timestamp="2020-06-09T07:00:45.541"
+    xmlns="http://www.ws-i.org/testing/2004/07/report/"
+    xmlns:wsi-report="http://www.ws-i.org/testing/2004/07/report/"
+    xmlns:wsi-log="http://www.ws-i.org/testing/2003/03/log/"
+    xmlns:wsi-analyzerConfig="http://www.ws-i.org/testing/2004/07/analyzerConfig/"
+    xmlns:wsi-monConfig="http://www.ws-i.org/testing/2003/03/monitorConfig/"
+    xmlns:wsi-assertions="http://www.ws-i.org/testing/2004/07/assertions/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <analyzer version="1.0.0" releaseDate="2005-07-04">
+    <implementer name="WS-I Organization" location="http://www.ws-i.org"/>
+    <environment>
+      <runtime name="OpenJDK Runtime Environment" version="14+36-1461"/>
+      <operatingSystem name="Windows 10" version="10.0"/>
+      <xmlParser name="Apache Xerces" version="Xerces-J 2.6.2"/>
+    </environment>
+    <wsi-analyzerConfig:configuration>
+      <wsi-analyzerConfig:verbose>true</wsi-analyzerConfig:verbose>
+      <wsi-analyzerConfig:assertionResults type="all" messageEntry="false" assertionDescription="false" failureMessage="true" failureDetail="true"/>
+        <wsi-analyzerConfig:reportFile replace="true" location="C:\Users\Simon\Documents\VuGen\Scripts\WebServices6\WSDL\WSIValidationReport_ndfdXML_ndfdXMLBinding.xml">
+      <wsi-analyzerConfig:addStyleSheet href="C:\Program Files (x86)\Micro Focus\LoadRunner\wsi-test-tools\common\xsl\report.xsl" type="text/xsl" alternate="false" />
+        </wsi-analyzerConfig:reportFile>
+        <wsi-analyzerConfig:testAssertionsFile>C:\Program Files (x86)\Micro Focus\LoadRunner\wsi-test-tools\common\profiles\SSBP10_BP11_TAD.xml</wsi-analyzerConfig:testAssertionsFile>
+        <wsi-analyzerConfig:logFile correlationType="operation">null</wsi-analyzerConfig:logFile>
+      <wsi-analyzerConfig:wsdlReference>
+        <wsi-analyzerConfig:wsdlElement type="binding" namespace="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl" >ndfdXMLBinding</wsi-analyzerConfig:wsdlElement>
+        <wsi-analyzerConfig:wsdlURI>C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl</wsi-analyzerConfig:wsdlURI>
+        <wsi-analyzerConfig:serviceLocation>http://DummyServiceLocation:80</wsi-analyzerConfig:serviceLocation>
+      </wsi-analyzerConfig:wsdlReference>
+    </wsi-analyzerConfig:configuration>
+  </analyzer>
+
+  <artifact type="discovery">
+    <entry type="[discovery]" >
+      <assertionResult id="BP3001" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP3002" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP3003" result="missingInput">
+      </assertionResult>
+    </entry>
+  </artifact>
+  <artifact type="description">
+    <entry type="definitions" referenceID="file:/C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl">
+      <assertionResult id="BP2201" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2700" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2701" result="failed">
+        <failureMessage xml:lang="en">The wsdl:definitions namespace is not: http://schemas.xmlsoap.org/wsdl/.</failureMessage>
+      </assertionResult>
+      <assertionResult id="BP2703" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2034" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2018" result="notApplicable">
+      <failureDetail xml:lang="en" >An error occurred while processing the document at file:/C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl.
+
+Exception: 
+null
+------------------------------------------------------------------------------
+  Nested exception is: 
+
+  java.lang.NullPointerException
+
+	at org.wsi.xml.XMLDocumentCacheUser.parseXMLDocumentURL(Unknown Source)
+	at org.wsi.xml.XMLDocumentCacheUser.parseXMLDocumentURL(Unknown Source)
+	at org.wsi.test.profile.validator.impl.wsdl.BP2018.validate(Unknown Source)
+	at org.wsi.test.profile.validator.impl.BaseValidatorImpl.processAssertions(Unknown Source)
+	at org.wsi.test.profile.validator.impl.wsdl.WSDLValidatorImpl.processDefinitionAssertions(Unknown Source)
+	at org.wsi.test.profile.validator.impl.wsdl.WSDLValidatorImpl.validate(Unknown Source)
+	at org.wsi.test.analyzer.BasicProfileAnalyzer.validateWSDL(Unknown Source)
+	at org.wsi.test.analyzer.BasicProfileAnalyzer.validateConformance(Unknown Source)
+	at org.wsi.test.analyzer.BasicProfileAnalyzer.main(Unknown Source)
+
+ 
+Element Location:
+  lineNumber=38
+      </failureDetail>
+      </assertionResult>
+      <assertionResult id="BP2101" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2103" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2104" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2105" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2416" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2417" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2123" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP4200" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP4201" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="types" referenceID="file:/C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl-Types">
+      <assertionResult id="BP2202" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2102" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2011" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2107" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2108" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2110" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2122" result="passed">
+      </assertionResult>
+      <assertionResult id="BP4202" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="import" referenceID="[import]">
+      <assertionResult id="BP2098" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP2803" result="missingInput">
+      </assertionResult>
+    </entry>
+    <entry type="binding" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}ndfdXMLBinding">
+      <assertionResult id="BP2020" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2021" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2402" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2022" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2032" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2404" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2012" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2406" result="failed">
+        <failureMessage xml:lang="en">The use attribute of a soapbind:body, soapbind:fault, soapbind:header and soapbind:headerfault does not have value of &quot;literal&quot;.</failureMessage>
+      <failureDetail xml:lang="en" >SOAPBody ({http://schemas.xmlsoap.org/wsdl/soap/}body):
+required=null
+use=encoded
+encodingStyles=[http://schemas.xmlsoap.org/soap/encoding/]
+namespaceURI=https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl
+ 
+Element Location:
+  lineNumber=417
+      </failureDetail>
+      </assertionResult>
+      <assertionResult id="BP2019" result="prereqFailed">
+        <prereqFailedList>
+          <testAssertionID>BP2406</testAssertionID>
+        </prereqFailedList>
+      </assertionResult>
+      <assertionResult id="BP2013" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2017" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2111" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2112" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2113" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2117" result="prereqFailed">
+        <prereqFailedList>
+          <testAssertionID>BP2406</testAssertionID>
+        </prereqFailedList>
+      </assertionResult>
+      <assertionResult id="BP2118" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2114" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2119" result="notApplicable">
+      </assertionResult>
+      <assertionResult id="BP2120" result="passed">
+      </assertionResult>
+      <assertionResult id="SSBP2209" result="passed">
+      </assertionResult>
+      <assertionResult id="SSBP2403" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="portType" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}ndfdXMLPortType">
+      <assertionResult id="BP2010" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="NDFDgen">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="NDFDgenByDay">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="NDFDgenLatLonList">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="NDFDgenByDayLatLonList">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="GmlLatLonList">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="GmlTimeSeries">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="LatLonListSubgrid">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="LatLonListLine">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="LatLonListZipCode">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="LatLonListSquare">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="CornerPoints">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="operation" referenceID="LatLonListCityNames">
+      <assertionResult id="BP2208" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2014" result="notApplicable">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListLineRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}GmlTimeSeriesResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenByDayRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListSubgridRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}CornerPointsResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}GmlLatLonListResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenLatLonListRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListSubgridResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListZipCodeResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListZipCodeRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListSquareResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListCityNamesRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenByDayResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListLineResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}GmlTimeSeriesRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListSquareRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}LatLonListCityNamesResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenLatLonListResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenByDayLatLonListResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenResponse">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}NDFDgenByDayLatLonListRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}GmlLatLonListRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+    <entry type="message" referenceID="{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}CornerPointsRequest">
+      <assertionResult id="BP2115" result="passed">
+      </assertionResult>
+      <assertionResult id="BP2116" result="passed">
+      </assertionResult>
+    </entry>
+  </artifact>
+  <artifact type="message">
+    <entry type="[message]" >
+      <assertionResult id="BP1004" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1006" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1116" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1002" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1001" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1010" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1101" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1103" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4103" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4104" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4105" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4106" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4107" result="missingInput">
+      </assertionResult>
+      <assertionResult id="SSBP1003" result="missingInput">
+      </assertionResult>
+      <assertionResult id="SSBP5100" result="missingInput">
+      </assertionResult>
+      <assertionResult id="SSBP5101" result="missingInput">
+      </assertionResult>
+    </entry>
+  </artifact>
+  <artifact type="envelope">
+    <entry type="[envelope]" >
+      <assertionResult id="BP1107" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1601" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1201" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1701" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1308" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1011" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1013" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1204" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1301" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1305" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1306" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1031" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1032" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1033" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1316" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1307" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1202" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1318" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1008" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1211" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1212" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1213" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1214" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1755" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1005" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1302" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1203" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1100" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1600" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1012" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1007" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1208" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1009" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP1309" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4100" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4101" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4102" result="missingInput">
+      </assertionResult>
+      <assertionResult id="BP4109" result="missingInput">
+      </assertionResult>
+      <assertionResult id="SSBP1601" result="missingInput">
+      </assertionResult>
+      <assertionResult id="SSBP9704" result="missingInput">
+      </assertionResult>
+    </entry>
+  </artifact>
+  <summary result="failed">
+  </summary>
+</report>

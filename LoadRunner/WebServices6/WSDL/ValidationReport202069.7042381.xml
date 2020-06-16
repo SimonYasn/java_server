@@ -1,0 +1,11 @@
+<Report time="9 июня 2020 г.">
+  <WSDLS>
+    <WSDL unc="C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl" name="C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl">
+      <msgs>
+        <msg severity="Error" xpath="" col="0" line="">WS-I report C:\Users\Simon\Documents\VuGen\Scripts\WebServices6\WSDL\WSIValidationReport_ndfdXML_ndfdXMLBinding.xml was created  service: "ndfdXML" binding: tns:ndfdXMLBinding; Summary status:failed</msg>
+        <msg severity="Error" xpath="" col="0" line="BP2701">....WS-I validation failure: </msg>
+        <msg severity="Error" xpath="" col="0" line="BP2406">....WS-I validation failure: </msg>
+      </msgs>
+    </WSDL>
+  </WSDLS>
+</Report>

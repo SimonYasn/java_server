@@ -1,0 +1,12 @@
+<?xml-stylesheet href="..\web_service_call.xsl" type="text/xsl"?>
+<report vuGenInstallDir="C:\Program Files (x86)\Micro Focus\LoadRunner\">
+  <web_service_call>
+    <service name="ndfdXML" />
+    <port name="ndfdXMLPort" />
+    <operation name="NDFDgen" />
+    <wsdl location="C:/Users/Simon/Desktop/IPR/ndfdXML (7).wsdl" />
+    <address url="" />
+    <toolkit name="WCF" />
+    <aspect name="Positive Testing" />
+  </web_service_call>
+</report>
