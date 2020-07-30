@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: ru.lamoda.Tests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 20.523 sec <<< FAILURE!
+failTest(ru.lamoda.Tests)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.ArithmeticException: / by zero
+	at ru.lamoda.Tests.failTest(Tests.java:89)
+
+negativeCase(ru.lamoda.Tests)  Time elapsed: 6.582 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Это поле необходимо заполнить].> but was:<[Р­С‚Рѕ РїРѕР»Рµ РЅРµРѕР±С…РѕРґРёРјРѕ Р·Р°РїРѕР»РЅРёС‚СЊ].>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at ru.lamoda.Tests.negativeCase(Tests.java:71)
+

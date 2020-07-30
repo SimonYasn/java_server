@@ -1,0 +1,6 @@
+ru\lamoda\HomePage.class
+ru\lamoda\SignUpPage.class
+ru\lamoda\WebDriverSettings.class
+listeners\RetryAnalizer.class
+ru\lamoda\Tests.class
+ru\lamoda\Log4j.class
